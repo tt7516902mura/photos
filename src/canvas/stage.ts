@@ -139,7 +139,7 @@ export class StageController {
       lockScalingFlip: true,
       lockSkewingX: true,
       lockSkewingY: true,
-      cornerStyle: 'circle' as const,
+      cornerStyle: 'rect' as const,
       cornerColor: '#ffffff',
       cornerStrokeColor: ACCENT,
       transparentCorners: false,

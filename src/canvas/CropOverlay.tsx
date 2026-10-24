@@ -124,7 +124,7 @@ export function drawOverlay(cv: HTMLCanvasElement, tool: Tool, v: View, c: CropS
       pts.forEach((p, i) => {
         const r = i === 0 && pts.length >= 3 ? s * 0.75 : s * 0.5;
         ctx.beginPath();
-        ctx.arc(p.x, p.y, r, 0, Math.PI * 2);
+        ctx.rect(p.x - r, p.y - r, r * 2, r * 2);
         ctx.fillStyle = i === 0 ? ACCENT : '#fff';
         ctx.fill();
         ctx.lineWidth = 2;
